@@ -19,7 +19,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Welcome to the Pizza house
+            Pizza house
         </div>
 
         <div class="links">
