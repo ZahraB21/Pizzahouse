@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pizzas', function() {
-    $pizzaList = ['Hawaiian','Pepperoni','Cheese'];
-    return view('pizzas', ['pizzaList' => $pizzaList]);
-});
+Route::get('/pizzas', 'PizzaController@index' );
+
+Route::get('/pizzas/{id}', 'PizzaController@show');

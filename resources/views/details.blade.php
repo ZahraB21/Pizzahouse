@@ -18,15 +18,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Pizzas
-        </div>
-
-        <div class="links">
-            <a href="/">Home</a>
-            @foreach ($pizzaList as $pizza)
-            <a href="{{$pizza->name}}">{{$pizza->name}}</a>
-            @endforeach
-            
+            Pizzas - {{ $id }}
         </div>
     </div>
 </div>
