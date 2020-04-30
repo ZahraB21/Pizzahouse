@@ -20,6 +20,22 @@
         <div class="title m-b-md">
             Create Pizza
         </div>
+        <form action="/pizzas" method="post">
+            <label for="name">Pizza Name: </label>
+            <input type="text" name="name" id="name">
+            <label for="type">Pizza Type: </label>
+            <select name="type" id="type">
+                <option value="meat">Meat</option>
+                <option value="veggie">Veggie</option>
+            </select>
+            <label for="base">Pizza Base: </label>
+            <select name="base" id="base">
+                <option value="red sauce">Red Sauce</option>
+                <option value="ranch sause">Ranch Sauce</option>
+                <option value="garlic sause">Garlic Sauce</option>
+            </select>
+            <input type="submit" value='Order Pizza'>
+        </form>
     </div>
 </div>
 @endsection
