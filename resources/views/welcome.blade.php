@@ -29,6 +29,9 @@
             <a href="https://nova.laravel.com">Salads</a>
             <a href="https://forge.laravel.com">Sandwiches</a>
         </div>
+        <div>
+            <p>{{ session('message') }}</p>
+        </div>
     </div>
 </div>
 @endsection
