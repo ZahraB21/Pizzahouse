@@ -35,6 +35,12 @@
                 <option value="ranch sause">Ranch Sauce</option>
                 <option value="garlic sause">Garlic Sauce</option>
             </select>
+            <fieldset>
+                <label>Extra Toppings:</label>
+                <input type="checkbox" name="toppings[]" value='mushrooms'>Mushrooms <br />
+                <input type="checkbox" name="toppings[]" value='peppers'>Peppers <br />
+                <input type="checkbox" name="toppings[]" value='olives'>Olives <br />
+            </fieldset>
             <input type="submit" value='Order Pizza'>
         </form>
     </div>
