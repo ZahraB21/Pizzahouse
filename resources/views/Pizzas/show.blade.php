@@ -20,7 +20,9 @@
         <div class="title m-b-md">
             {{ $pizza->name }} Pizza
         </div>
-        <div class="link">
+        <div class="links">
+        <a href="/pizzas">Back</a><br />
+        Pizza Details: 
             {{ $pizza-> base }}, {{ $pizza->type }}<br />
             @if($pizza->toppings != null) 
                 Pizza Extra Toppings: 
@@ -29,7 +31,12 @@
                 @endforeach
                 <br />
             @endif
-            <a href="/pizzas">Back</a>
+            <br/>
+        <form action="/pizzas/{{ $pizza->name }}" method='POST'>
+            @csrf
+            @method('DELETE')
+            <input type="submit" value="Delete" >
+        </form>
         </div>
     </div>
 </div>
