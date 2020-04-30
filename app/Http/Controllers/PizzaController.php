@@ -7,14 +7,23 @@ use App\Pizza;
 
 class PizzaController extends Controller
 {
+    private $pizzaList;
+
+    function __construct(){
+        $this->pizzaList = Pizza::all();
+    }
     public function index(){
-        $pizzaList = Pizza::all();
         //$pizzaList = ['Hawaiian','Pepperoni','Cheese', 'Volcano' , 'Supreme'];
-        return view('Pizzas.index', ['pizzaList' => $pizzaList]);
+        return view('Pizzas.index', ['pizzaList' => $this->pizzaList]);
     }
 
     public function show($id){
-        return view('Pizzas.show', ['id' => $id]);
+        $pizza = Pizza::find($id);
+
+        if($pizza != null)
+            return view('Pizzas.show', ['pizza' => $pizza]);
+        else
+            return view('Pizzas.index', ['pizzaList' => $this->pizzaList]);
     }
 
     public function create() {

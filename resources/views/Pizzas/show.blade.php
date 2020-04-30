@@ -18,7 +18,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Pizzas - {{ $id }}
+            {{ $pizza->name }} Pizza
         </div>
     </div>
 </div>
