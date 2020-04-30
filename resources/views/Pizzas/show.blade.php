@@ -20,6 +20,17 @@
         <div class="title m-b-md">
             {{ $pizza->name }} Pizza
         </div>
+        <div class="link">
+            {{ $pizza-> base }}, {{ $pizza->type }}<br />
+            @if($pizza->toppings != null) 
+                Pizza Extra Toppings: 
+                @foreach($pizza->toppings as $topping)
+                    {{ $topping }} | 
+                @endforeach
+                <br />
+            @endif
+            <a href="/pizzas">Back</a>
+        </div>
     </div>
 </div>
 @endsection

@@ -22,7 +22,7 @@
         </div>
 
         <div class="links">
-        <a href="/">Home</a>
+            <a href="/">Home</a>
             <a href="/pizzas">Pizzas</a>
             <a href="https://blog.laravel.com">Pastas</a>
             <a href="https://nova.laravel.com">Salads</a>

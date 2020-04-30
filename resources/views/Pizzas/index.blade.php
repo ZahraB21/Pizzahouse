@@ -24,7 +24,7 @@
         <div class="links">
             <a href="/">Home</a>
             @foreach ($pizzaList as $pizza)
-            <a href="{{$pizza->name}}">{{$pizza->name}}</a>
+            <a href="/pizzas/{{$pizza->name}}">{{$pizza->name}}</a>
             @endforeach
             <a href="/pizzas/create">Create</a>
         </div>

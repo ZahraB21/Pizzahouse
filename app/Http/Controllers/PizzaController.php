@@ -18,7 +18,8 @@ class PizzaController extends Controller
     }
 
     public function show($id){
-        $pizza = Pizza::find($id);
+        error_log($id);
+        $pizza = Pizza::where('name',$id)->get()->first();
 
         if($pizza != null)
             return view('Pizzas.show', ['pizza' => $pizza]);
