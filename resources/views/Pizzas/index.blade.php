@@ -26,7 +26,7 @@
             @foreach ($pizzaList as $pizza)
             <a href="{{$pizza->name}}">{{$pizza->name}}</a>
             @endforeach
-            
+            <a href="/pizzas/create">Create</a>
         </div>
     </div>
 </div>

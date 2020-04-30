@@ -21,6 +21,7 @@
             Create Pizza
         </div>
         <form action="/pizzas" method="post">
+        @csrf
             <label for="name">Pizza Name: </label>
             <input type="text" name="name" id="name">
             <label for="type">Pizza Type: </label>
