@@ -25,12 +25,9 @@
         <div class="links">
         <a href="/">Home</a>
             <a href="/pizzas">Pizzas</a>
-            <a href="/details">Details</a>
-            <a href="https://blog.laravel.com">Blog</a>
-            <a href="https://nova.laravel.com">Nova</a>
-            <a href="https://forge.laravel.com">Forge</a>
-            <a href="https://vapor.laravel.com">Vapor</a>
-            <a href="https://github.com/laravel/laravel">GitHub</a>
+            <a href="https://blog.laravel.com">Pastas</a>
+            <a href="https://nova.laravel.com">Salads</a>
+            <a href="https://forge.laravel.com">Sandwiches</a>
         </div>
     </div>
 </div>
