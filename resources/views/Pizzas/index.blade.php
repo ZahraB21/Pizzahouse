@@ -31,21 +31,22 @@
     </div>
 </div>
 
+
 <div class="flex-center position-ref full-height" id = "Volcano">
-    <div class="row">
-        <div class="col-12 col-md-4">
-            <div class="section">
-                <img src="/images/volcano.jpg" alt="Volcano image" width="300" height=400>
+    <div class="container">
+        <div class="row " class="p2">
+            <div class="col-12 col-md-6">
+                <div class="section flex-center">
+                    <img src="/images/volcano.jpg" alt="Volcano image">
+                </div>
             </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="section">
-                <img src="/images/volcano.jpg" alt="Volcano image" width="300" height=400>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="section">
-                <img src="/images/volcano.jpg" alt="Volcano image" width="300" height=400>
+            <div class="col-12 col-md-6">
+                <div class="section">
+                <h1 class="text-center display-3" class="flex-start">{{$pizzaList[0]->name}}</h1>
+                    <div class="main-content">
+                        Toppings: 
+                    </div> 
+                </div>
             </div>
         </div>
     </div>

@@ -36,7 +36,8 @@ body {
     font-size: 84px;
 }
 
-.links>a {
+.links>a,
+.main-content {
     color: #636b6f;
     padding: 0 25px;
     font-size: 13px;
@@ -60,10 +61,24 @@ footer::after {
     visibility: hidden;
 }
 
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
 // Pizzas Page Content Styling
 
 #Volcano {
     .section {
         margin-right: 1%;
+
+        img {
+            width: 400px;
+            height: 430px;
+            padding-right: 10%;
+            //border-right: 5px solid #eee;
+        }
     }
 }
