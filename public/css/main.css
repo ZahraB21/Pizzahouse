@@ -56,7 +56,11 @@ footer {
   text-align: center;
 }
 
-pre {
+footer::after {
   visibility: hidden;
+}
+
+#Volcano .section {
+  margin-right: 1%;
 }
 
