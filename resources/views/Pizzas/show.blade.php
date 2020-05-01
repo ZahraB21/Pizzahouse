@@ -32,11 +32,7 @@
                 <br />
             @endif
             <br/>
-        <form action="/pizzas/{{ $pizza->name }}" method='POST'>
-            @csrf
-            @method('DELETE')
-            <input type="submit" value="Delete" >
-        </form>
+        
         </div>
     </div>
 </div>
