@@ -9,7 +9,7 @@ body {
 }
 
 .full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .flex-center {
@@ -68,13 +68,84 @@ footer::after {
   align-items: center;
 }
 
-#Volcano .section {
-  margin-right: 1%;
+#Volcano .section h1,
+#Hawaiian .section h1,
+#Supreme .section h1,
+#BBQ-Chicken .section h1 {
+  font-size: 3.5rem;
+  margin-top: 0.75rem;
 }
 
-#Volcano .section img {
+#Volcano .section img,
+#Hawaiian .section img,
+#Supreme .section img,
+#BBQ-Chicken .section img {
   width: 400px;
   height: 430px;
-  padding-right: 10%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#Volcano .section .main-content,
+#Hawaiian .section .main-content,
+#Supreme .section .main-content,
+#BBQ-Chicken .section .main-content {
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#Volcano .section .main-content span,
+#Hawaiian .section .main-content span,
+#Supreme .section .main-content span,
+#BBQ-Chicken .section .main-content span {
+  color: #e8c7a4;
+}
+
+#Volcano .section .main-content button,
+#Hawaiian .section .main-content button,
+#Supreme .section .main-content button,
+#BBQ-Chicken .section .main-content button {
+  margin-bottom: 10%;
+}
+
+hr {
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #Volcano .section h1,
+  #Hawaiian .section h1,
+  #Supreme .section h1,
+  #BBQ-Chicken .section h1 {
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.75rem;
+  }
+
+  #Volcano .col_2,
+  #Hawaiian .col_2,
+  #Supreme .col_2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #Volcano .section h1,
+  #Hawaiian .section h1,
+  #Supreme .section h1,
+  #BBQ-Chicken .section h1 {
+    width: 120%;
+    font-size: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
