@@ -54,7 +54,7 @@
                         <p class="pl-5">{{$pizza->base}}</p>
                         Type: <br />
                         <p class="pl-5">{{$pizza->type}} Pizza</p>
-                        <form action="/orders" method="post">
+                        <form action="/orders" method="get">
                             <div class="container flex-center">
                                 <button class="btn btn-dark btn-lg mt-3">Order Now</button>
                             </div>
