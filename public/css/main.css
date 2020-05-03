@@ -168,6 +168,56 @@ hr {
   width: 100px;
 }
 
+.create-pizza {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.create-pizza .row {
+  width: 100%;
+  margin: 0 auto 1% auto;
+}
+
+.create-pizza .row .col-md-10 {
+  margin-bottom: 10%;
+}
+
+.create-pizza .row .col-md-10 form select {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.create-pizza .row .col-md-10 form fieldset {
+  padding: 1%;
+  border: 1px solid #999;
+  border-radius: 0.25rem;
+}
+
+.create-pizza .row .col-md-10 form fieldset .container .row .col-6 {
+  text-align: left;
+}
+
+.create-pizza .row .col-md-10 form fieldset .container .row .col-6 input {
+  margin-right: 5px;
+}
+
+.create-pizza .row .row-center {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-pizza .row .row-center button {
+  width: 30%;
+}
+
+.create-pizza .row button {
+  width: 30%;
+}
+
 @media screen and (min-width: 768px) {
   #Volcano .section h1,
   #Hawaiian .section h1,

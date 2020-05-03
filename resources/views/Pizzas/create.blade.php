@@ -16,38 +16,136 @@
         </div>
     @endif
 
-    <div class="content">
+    <div class="content create-pizza mt-5">
         <div class="title m-b-md">
             Create Pizza
         </div>
-        <form action="/pizzas" method="post">
-        @csrf
-            <label for="name">Pizza Name: </label>
-            <input type="text" name="name" id="name">
-            <label for="type">Pizza Type: </label>
-            <select name="type" id="type">
-                <option value="meat">Meat</option>
-                <option value="veggie">Veggie</option>
-            </select>
-            <label for="base">Pizza Base: </label>
-            <select name="base" id="base">
-                <option value="red sauce">Red Sauce</option>
-                <option value="ranch sause">Ranch Sauce</option>
-                <option value="garlic sause">Garlic Sauce</option>
-            </select>
-            <fieldset>
-                <label>Extra Toppings:</label>
-                <input type="checkbox" name="toppings[]" value='mushrooms'>Mushrooms <br />
-                <input type="checkbox" name="toppings[]" value='peppers'>Peppers <br />
-                <input type="checkbox" name="toppings[]" value='olives'>Olives <br />
-            </fieldset>
-            <input type="submit" value='Order Pizza'>
-        </form>
-        <form action="/" method='POST'>
-            @csrf
-            @method('DELETE')
-            <input type="submit" value="Delete" >
-        </form>
+        <div class="container flex-center">
+            <div class="row justify-content-center">
+            <div class="col-md-10 ">
+                <div class="card">
+                    <div class="card-header">Create your own pizza</div>
+                    <div class="card-body">
+                        <form action="/pizzas" method="post">
+                            @csrf
+                            <div class="form-group row pb-2">
+                                <label for="name" class="col-md-4 col-form-label text-md-right text-left">Name: </label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" placeholder = "Enter your name here" name="name"  required autocomplete="name" autofocus>
+
+                                    @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-2">
+                                <label for="type" class="col-md-4 col-form-label text-md-right text-left">Type: </label>
+
+                                <div class="col-md-6">
+                                    <!-- <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" placeholder = "Select the type of pizza" name="type"  required autocomplete="name" autofocus> -->
+
+                                    <select name="type" id="type">
+                                        <option value="meat">Meat</option>
+                                        <option value="veggie">Veggie</option>
+                                    </select>
+                                    @error('type')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-2">
+                                <label for="base" class="col-md-4 col-form-label text-md-right text-left">Base: </label>
+
+                                <div class="col-md-6">
+                                    <!-- <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" placeholder = "Select the type of pizza" name="type"  required autocomplete="name" autofocus> -->
+
+                                    <select name="base" id="base">
+                                        <option value="red sauce" active>Red Sauce</option>
+                                        <option value="garlic sause">Garlic Sauce</option>
+                                    </select>
+                                    @error('base')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                           
+                            <div class="form-group row pb-2">
+                                <label for="toppings" class="col-md-4 col-form-label text-md-right text-left">Toppings: </label>
+
+                                <div class="col-md-6">
+                                    <!-- <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" placeholder = "Select the type of pizza" name="type"  required autocomplete="name" autofocus> -->
+
+                                    <fieldset>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='cheese' active>Cheese <br />
+                                                </div>
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='mushrooms'>Mushrooms <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='peppers'>Peppers <br />
+                                                </div>
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='olives'>Olives <br />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='chicken'>Chicken <br />
+                                                </div>
+                                                <div class="col-6">
+                                                <input type="checkbox" name="toppings[]" value='tomato'>Tomato <br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </fieldset>
+                                    @error('toppings')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <div class="container row-center">
+                                        <button type="submit" class="btn btn-dark">
+                                            Order Pizza
+                                        </button>
+                                        <form action="/" method='POST'>
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">
+                                            Delete Pizza
+                                        </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
 @endsection

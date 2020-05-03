@@ -179,6 +179,75 @@ hr {
     }
 }
 
+// -------- CREATE-PIZZA
+.create-pizza {
+    width: 100%;
+    min-height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+
+    .row {
+        width: 100%;
+        margin: 0 auto 1% auto;
+
+        .col-md-10 {
+            margin-bottom: 10%;
+
+            form {
+
+                select {
+                    width: 100%;
+                    padding: .375rem .75rem;
+                    border-radius: .25rem;
+                }
+
+                fieldset {
+                    padding: 1%;
+                    border: 1px solid #999;
+                    border-radius: .25rem;
+
+
+                    .container {
+                        .row {
+                            .col-6 {
+                                text-align: left;
+
+                                input {
+                                    margin-right: 5px;
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        .row-center {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+            button {
+                width: 30%;
+            }
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+}
+
+
+
 @media screen and (min-width: 768px) {
 
     #Volcano,
