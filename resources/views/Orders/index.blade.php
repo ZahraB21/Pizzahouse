@@ -29,20 +29,18 @@
             <div class="col-xs-12 col-sm-12 col-md-6" id="col_1">
                 <h2>Register</h2>
                 <p>Don't have an account ? </p>
-                <form action="" method="post">
+                <form action="{{ route('register') }}" method="get">
                     <button>Sign Up</button>
                 </form>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6" id="col_2">
-            <h2>Login</h2>
-            <p>Already have an account ? </p>
-            <form action="" method="post">
-                    <button>Login</button>
+                <h2>Login</h2>
+                <p>Already have an account ? </p>
+                <form action="{{ route('login') }}" method="get">
+                        <button>Login</button>
                 </form>
             </div>
         </div>
-    
-        
     </div>
 </div>
 
