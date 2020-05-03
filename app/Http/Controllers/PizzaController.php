@@ -13,7 +13,6 @@ class PizzaController extends Controller
         $this->pizzaList = Pizza::all();
     }
     public function index(){
-        
         return view('Pizzas.index', ['pizzaList' => $this->pizzaList]);
     }
 

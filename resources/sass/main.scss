@@ -116,6 +116,17 @@ hr {
     margin: 0 auto;
 }
 
+.row-center {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-center>a {
+    margin-bottom: 10%;
+}
 
 // -------- ORDERS
 
@@ -224,19 +235,6 @@ hr {
                     }
 
                 }
-            }
-        }
-
-
-        .row-center {
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-
-            button {
-                width: 30%;
             }
         }
 

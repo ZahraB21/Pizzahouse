@@ -114,6 +114,18 @@ hr {
   margin: 0 auto;
 }
 
+.row-center {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-center > a {
+  margin-bottom: 10%;
+}
+
 #orders {
   width: 100%;
 }
@@ -200,18 +212,6 @@ hr {
 
 .create-pizza .row .col-md-10 form fieldset .container .row .col-6 input {
   margin-right: 5px;
-}
-
-.create-pizza .row .row-center {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.create-pizza .row .row-center button {
-  width: 30%;
 }
 
 .create-pizza .row button {

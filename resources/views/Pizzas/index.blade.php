@@ -46,7 +46,7 @@
                     <div class="main-content">
                         Toppings: <br />
                         <p class="pl-5">
-                        @foreach ($pizza->toppings as $topping)
+                        @foreach($pizza->toppings as $topping)
                         {{ $topping }} <span>|</span>
                         @endforeach
                         </p>
@@ -54,9 +54,18 @@
                         <p class="pl-5">{{$pizza->base}}</p>
                         Type: <br />
                         <p class="pl-5">{{$pizza->type}} Pizza</p>
-                        <form action="/orders" method="get">
+                        <form action="/order/" method="get">
                             <div class="container flex-center">
-                                <button class="btn btn-dark btn-lg mt-3">Order Now</button>
+                                <div class="row ">
+                                    <div class="col row-center">
+                                        <button type="submit" class="btn btn-dark">
+                                            Order Pizza
+                                        </button>
+                                        <a href="/" class="btn btn-dark">
+                                            <i class="fa fa-arrow-up"></i>                                         
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div> 

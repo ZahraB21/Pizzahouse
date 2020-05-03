@@ -32,7 +32,7 @@
                                 <label for="name" class="col-md-4 col-form-label text-md-right text-left">Name: </label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" placeholder = "Enter your name here" name="name"  required autocomplete="name" autofocus>
+                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" placeholder = "Enter your name here" name="name" required autocomplete="name" autofocus>
 
                                     @error('name')
                                         <span class="invalid-feedback" role="alert">
@@ -112,11 +112,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                        
                                     </fieldset>
                                     @error('toppings')
                                         <span class="invalid-feedback" role="alert">
@@ -125,24 +120,24 @@
                                     @enderror
                                 </div>
                             </div>
-                            
+                        
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <div class="container row-center">
                                         <button type="submit" class="btn btn-dark">
                                             Order Pizza
                                         </button>
-                                        <form action="/" method='POST'>
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">
-                                            Delete Pizza
-                                        </button>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </form> 
+                        <!-- <form action="/pizzas" method='get'>
+                            @csrf
+                            @method('DELETE')
+                            <a href="/">
+                                <button type="submit" class="btn btn-danger">Cancel Order</button>
+                            </a>
+                        </form>         -->
                     </div>
                 </div>
             </div>
