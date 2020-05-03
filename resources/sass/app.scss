@@ -9,8 +9,8 @@
 
 main {
 
-
-    .login {
+    .login,
+    .register {
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -21,6 +21,21 @@ main {
         .row {
             width: 100%;
 
+            .row-center {
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+
+                button {
+                    width: 90%;
+                }
+            }
+
+            button {
+                width: 30%;
+            }
         }
     }
 }

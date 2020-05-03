@@ -10882,7 +10882,8 @@ a.text-dark:focus {
   }
 }
 
-main .login {
+main .login,
+main .register {
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -10890,8 +10891,28 @@ main .login {
   align-items: center;
 }
 
-main .login .row {
+main .login .row,
+main .register .row {
   width: 100%;
+}
+
+main .login .row .row-center,
+main .register .row .row-center {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .login .row .row-center button,
+main .register .row .row-center button {
+  width: 90%;
+}
+
+main .login .row button,
+main .register .row button {
+  width: 30%;
 }
 
 footer {
