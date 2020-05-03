@@ -10882,3 +10882,21 @@ a.text-dark:focus {
   }
 }
 
+main .login {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .login .row {
+  width: 100%;
+}
+
+footer {
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+}
+

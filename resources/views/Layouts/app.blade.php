@@ -75,6 +75,9 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer>
+            Copyright @ 2020 | Pizza House
+    </footer>
     </div>
 </body>
 </html>
