@@ -21,6 +21,7 @@ class CreatePizzaTable extends Migration
             $table->string('name');
             $table->boolean('original');
             $table->json('toppings')->nullable();
+            $table->primary('id');
         });
     }
 
