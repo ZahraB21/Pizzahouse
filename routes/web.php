@@ -37,3 +37,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/order' , 'OrderController@index');
 
 Route::get('/order/{id}', 'OrderController@show');
+
+Route::get('/pizzas/react/listing', 'Api\PizzaController@index');
