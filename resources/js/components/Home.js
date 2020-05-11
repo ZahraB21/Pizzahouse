@@ -21,7 +21,6 @@ class Home extends Component {
     render() {
         const title = "Home web page.";
         const pizzas = this.state.pizzas.map(pizza => {
-            // console.log(pizza);
             return (
                 <tr>
                     <th scope="col">{pizza.name}</th>

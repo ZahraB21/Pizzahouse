@@ -70151,7 +70151,6 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function render() {
       var title = "Home web page.";
       var pizzas = this.state.pizzas.map(function (pizza) {
-        // console.log(pizza);
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
           scope: "col"
         }, pizza.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
