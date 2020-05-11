@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', 'PizzaController@index');
 
+Route::get('/pizzas/react', 'PizzaController@react');
+
 Route::get('/pizzas', 'PizzaController@index' );
 
 Route::get('/pizzas/create', 'PizzaController@create');

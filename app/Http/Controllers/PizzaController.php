@@ -49,4 +49,8 @@ class PizzaController extends Controller
 
         return redirect('/');
     }
+
+    public function react(){
+        return view('pizzas.react');
+    }
 }

@@ -29,6 +29,7 @@
                 @endif
             @endforeach
             <a href="/pizzas/create">Create</a>
+            <a href="/pizzas/react">React</a>
         </div>
         <p class="mt-3 text-success">{{ session('message') }}</p>
     </div>
