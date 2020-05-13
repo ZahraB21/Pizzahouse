@@ -69973,6 +69973,17 @@ var About = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Add.js":
+/*!****************************************!*\
+  !*** ./resources/js/components/Add.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: D:\\Projects\\WebProjects\\laravel\\pizzahouse\\resources\\js\\components\\Add.js: Support for the experimental syntax 'classProperties' isn't currently enabled (5:11):\n\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mAdd\u001b[39m \u001b[36mextends\u001b[39m \u001b[33mComponent\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m    constructor() {}\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 | \u001b[39m    state \u001b[33m=\u001b[39m {}\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 | \u001b[39m    render() {\u001b[0m\n\u001b[0m \u001b[90m 7 | \u001b[39m        \u001b[36mreturn\u001b[39m \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 | \u001b[39m    }\u001b[0m\n\nAdd @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.\n    at Object._raise (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:742:17)\n    at Object.raiseWithData (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:735:17)\n    at Object.expectPlugin (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:8762:18)\n    at Object.parseClassProperty (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:12110:12)\n    at Object.pushClassProperty (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:12070:30)\n    at Object.parseClassMemberWithIsStatic (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:12003:14)\n    at Object.parseClassMember (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11940:10)\n    at withTopicForbiddingContext (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11885:14)\n    at Object.withTopicForbiddingContext (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:10956:14)\n    at Object.parseClassBody (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11862:10)\n    at Object.parseClass (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11836:22)\n    at Object.parseStatementContent (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11123:21)\n    at Object.parseStatement (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11081:17)\n    at Object.parseBlockOrModuleBlockBody (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11656:25)\n    at Object.parseBlockBody (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11642:10)\n    at Object.parseTopLevel (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:11012:10)\n    at Object.parse (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:12637:10)\n    at parse (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\parser\\lib\\index.js:12688:38)\n    at parser (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\core\\lib\\parser\\index.js:54:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:93:38)\n    at normalizeFile.next (<anonymous>)\n    at run (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\core\\lib\\transformation\\index.js:31:50)\n    at run.next (<anonymous>)\n    at Function.transform (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\@babel\\core\\lib\\transform.js:27:41)\n    at transform.next (<anonymous>)\n    at step (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\gensync\\index.js:254:32)\n    at gen.next (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\gensync\\index.js:266:13)\n    at async.call.value (D:\\Projects\\WebProjects\\laravel\\pizzahouse\\node_modules\\gensync\\index.js:216:11)");
+
+/***/ }),
+
 /***/ "./resources/js/components/Header.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/Header.js ***!
@@ -70151,7 +70162,9 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function render() {
       var title = "Home web page.";
       var pizzas = this.state.pizzas.map(function (pizza) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+          key: pizza.id
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
           scope: "col"
         }, pizza.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
           scope: "col"
@@ -70201,6 +70214,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Home */ "./resources/js/components/Home.js");
+/* harmony import */ var _Add__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Add */ "./resources/js/components/Add.js");
+/* harmony import */ var _Add__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Add__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70229,6 +70244,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var Index = /*#__PURE__*/function (_Component) {
   _inherits(Index, _Component);
 
@@ -70247,10 +70263,16 @@ var Index = /*#__PURE__*/function (_Component) {
         className: "app"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/pizzas/react/listing"
-      }, "Listing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      }, "Listing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/pizzas/react/add"
+      }, "Add"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/pizzas/react/listing",
         component: _Home__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
+        path: "/pizzas/react/add",
+        component: _Add__WEBPACK_IMPORTED_MODULE_6___default.a
       })));
     }
   }]);

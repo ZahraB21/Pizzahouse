@@ -22,7 +22,7 @@ class Home extends Component {
         const title = "Home web page.";
         const pizzas = this.state.pizzas.map(pizza => {
             return (
-                <tr>
+                <tr key={pizza.id}>
                     <th scope="col">{pizza.name}</th>
                     <th scope="col">{pizza.type}</th>
                     <th scope="col">{pizza.base}</th>
